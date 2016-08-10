@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="text-center">Buy an Item</h1>
+      <p> </p>
+      <h3>First enter your information:</h3>
+      <!-- Create a website with a form on it to take the user's full name and address as if they were ordering a product from you. After they submit the form you should show them a receipt. Thank them for purchasing whatever it is you are selling, and be sure to use their full name. Then reprint their address as a confirmation of shipping details. -->
+      <form class="" method="post">
+        <div class="form-group">
+          <input id="name" class="form-control " value="Please enter your name"></input><br>
+          <input id="address" class="form-control " value="Please enter your address"></input><br>
+          <input id="city" class="form-control width" value="City"></input>
+          <input id="state" class="form-control width" value="State"></input>
+          <button id="button" name="button">Submit Purchase</button>
+        </div>
+      </form>
+
+      <div class="jumbotron hideMe">
+      <h2>Your Receipt</h2>
+      <h4>Name: <span class="name"></span></h4>
+      <h4>Address: <span class="address"></span></h4>
+      <h4>City: <span class="city"></span></h4>
+      <h4>State: <span class="state"></span></h4>
+    </div>
+  </body>
+</html>

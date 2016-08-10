@@ -48,3 +48,84 @@ $(document).ready(function() {
   });
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//For ShowReceipt
+
+$(function(){
+  $("#button").click(function(event){
+    // Name
+    var name = $("#name").val();
+    var address = $("#address").val();
+    var city = $("#city").val();
+    var state = $("#state").val();
+
+    $(".name").text(name);
+    $(".address").text(address);
+    $(".city").text(city);
+    $(".state").text(state);
+
+    $(".hideMe").show();
+    event.preventDefault();
+
+  });
+});
