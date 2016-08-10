@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <title>Calculator</title>
   </head>
   <body>
-    <h1>Calculator</h1>
-    <script src="js/scripts.js"></script>
+
+    <div class="container">
+      <h1>Calculator</h1>
+      <h2 id="result">&nbsp;</h2>        <!-- &nbsp; is code for a space -->
+      <form id="add">
+        <div class="form-group">
+          <label for="add1">1st number:</label>
+          <input id="add1" class="form-control width" type="text">
+        </div>
+        <div class="form-group">
+          <label for="add2">2st number:</label>
+          <input id="add2" class="form-control width" type="text">
+        </div>
+        <button id="adding" class="btn">Add</button>
+        <button id="subtract" class="btn">Subtract</button>
+        <button id="multiply" class="btn">Multiply</button>
+        <button id="divide" class="btn">Division</button>
+
+
+      </form>
+
+
+      </div>
+
+    </div>
   </body>
 </html>

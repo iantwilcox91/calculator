@@ -1,64 +1,50 @@
 var add = function(number1, number2) {
   return number1 + number2;
 };
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
-alert(add(number1, number2));
-
-
-
-
 
 var subtract = function(number1, number2) {
   return number1 - number2;
 };
 
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
-alert(subtract(number1, number2));
-
-
-
-
-
-
-var divide = function(number1, number2) {
-  return number1 / number2;
-};
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
-alert(divide(number1, number2));
-
-
-
-
-
-
 var multiply = function(number1, number2) {
   return number1 * number2;
 };
 
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
-alert(multiply(number1, number2));
-
-var BMI= function(number1, number2) {
-  return number1/(number2 * number2);
+var divide = function(number1, number2) {
+  return number1 / number2;
 };
 
-var number1 =parseInt(prompt('Enter your weight in kilograms:'));
-var number2 =parseInt(prompt('Enter your height in meter:'));
+$(document).ready(function() {
+  $("#adding").click(function(event) {
+    var number1 = parseInt($('#add1').val());
+    var number2 = parseInt($('#add2').val());
+    var result = add(number1, number2);
+    $("#result").text(result);
+    event.preventDefault();
+  });
 
-alert(BMI(number1, number2));
+  $("#subtract").click(function(event) {
+    var number1 = parseInt($('#add1').val());
+    var number2 = parseInt($('#add2').val());
+    var result = subtract(number1, number2);
+    $("#result").text(result);
+    event.preventDefault();
+  });
 
+  $("#multiply").click(function(event) {
+    var number1 = parseInt($('#add1').val());
+    var number2 = parseInt($('#add2').val());
+    var result = multiply(number1, number2);
+    $("#result").text(result);
+    event.preventDefault();
+  });
 
+  $("#divide").click(function(event) {
+    var number1 = parseInt($('#add1').val());
+    var number2 = parseInt($('#add2').val());
+    var result = divide(number1, number2);
+    $("#result").text(result);
+    event.preventDefault();
+  });
 
-var Fahrenheit = function(number1) { return (number1 * 1.8) + 32;};
-var number1 = parseInt(prompt("Enter Celsius"));
-alert(Fahrenheit(number1));
-
-
-
-var liters = function(number1) { return (number1 * 3.78541);};
-var number1 = parseInt(prompt("enter gallons"));
-alert(liters(number1));
+});
