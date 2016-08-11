@@ -19,12 +19,46 @@
       <!-- Create a website with a form on it to take the user's full name and address as if they were ordering a product from you. After they submit the form you should show them a receipt. Thank them for purchasing whatever it is you are selling, and be sure to use their full name. Then reprint their address as a confirmation of shipping details. -->
       <form class="" method="post">
         <div class="form-group">
-          <input id="name" class="form-control " value="Please enter your name"></input><br>
-          <input id="address" class="form-control " value="Please enter your address"></input><br>
+          <input id="name" class="form-control" value="Please enter your name"></input><br>
+          <input id="address" class="form-control" value="Please enter your address"></input><br>
           <input id="city" class="form-control width" value="City"></input>
           <input id="state" class="form-control width" value="State"></input>
           <button id="button" name="button">Submit Purchase</button>
         </div>
+
+
+
+        <select class="form-control" id="beverage">
+          <option>Coffee</option>
+          <option>Tea</option>
+          <option>Kombucha</option>
+          <option>Water</option>
+        </select>
+
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="chocolate" checked>
+            Chocolate
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="vanilla">
+            Vanilla
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="cookiesandcream">
+            Cookies & Cream
+          </label>
+        </div>
+
+
+
+
+
       </form>
 
       <div class="jumbotron hideMe">
